@@ -1,12 +1,11 @@
 import React from 'react'
 import {View,StyleSheet} from 'react-native'
 import Filters from 'react-native-vector-icons/Feather';
-import {MaterialIcon} from '../assets/selective.png';
 
 const CustomSettingIconButton = () => {
   return (
    <View style={styles.setting_button}>
-      <Filters name='filter' size={25} color={"lightgreen"}/>
+      <Filters name='filter' size={25} color={"gray"}/>
    </View>
   )
 }

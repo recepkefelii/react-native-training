@@ -1,7 +1,7 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { Text,View,StyleSheet} from 'react-native'
-import { useFonts,Poppins_500Medium} from '@expo-google-fonts/poppins';
+import { useFonts,Poppins_500Medium,Poppins_400Regular} from '@expo-google-fonts/poppins';
 import Menu from 'react-native-vector-icons/Entypo';
 import Notification from 'react-native-vector-icons/Ionicons';
 import CustomInputBox from '../components/CustomInputBox'
@@ -10,11 +10,11 @@ function Header () {
 
   let [fontsLoaded] = useFonts({
     Poppins_500Medium,
+    Poppins_400Regular
+
   });
 
 if (!fontsLoaded) return null;
-
-
   return (
     <View style={styles.main_header}>
       <View style={styles.header}>
@@ -41,7 +41,7 @@ if (!fontsLoaded) return null;
 const styles = StyleSheet.create({
     main_header:{
       backgroundColor:'#FBF1F3',
-      paddingBottom:50
+      paddingBottom:25
     },
    header:{
     paddingTop:30,
